@@ -215,6 +215,11 @@ export abstract class AceBaseBase extends SimpleEventEmitter {
                     include?: string[];
                     /** If the indexed values are strings, which default locale to use */
                     textLocale?: string;
+                    /**
+                     * Whether the values are indexed with case sensitivity or not (applies to string values only)
+                     * @default false
+                     */
+                    caseSensitive?: boolean
                     /** additional index-specific configuration settings */
                     config?: any;
                 }) => {
